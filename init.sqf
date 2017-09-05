@@ -45,6 +45,10 @@ if (hasInterface) then {
         waitUntil {sleep 0.5; !isNull (findDisplay 46)};
         (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call tac1_admin_fnc_keyPressed"];
     };
+    [] spawn {
+        waitUntil {sleep 0.5; !isNull (findDisplay 60492)};
+        (findDisplay 60492) displayAddEventHandler ["KeyDown", "_this call tac1_admin_fnc_keyPressed"];
+    };
     
 };
 [] spawn {

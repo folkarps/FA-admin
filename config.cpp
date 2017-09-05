@@ -43,6 +43,7 @@ class CfgFunctions
 			class fillMissionEndingBox {};
 			class fillPlayerListBox {};
 			class keyPressed {};
+			class keySpectPressed {};
 			class zeusAddAllObjects {};
 			class zeusServerMake {};
 			class zeusServerObjectPlacedSync {};
