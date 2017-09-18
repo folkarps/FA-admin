@@ -3,7 +3,6 @@
 
 Don't bother trying to use it on our server, it's not signed
 
-![alt text](https://dl.dropboxusercontent.com/u/27305806/admin_tool.jpg "Admin Tool Screenshot")
 
 If you wish to use this admin tool for your community ensure that you modify init.sqf  so that the included steam player IDs are removed, otherwise myself and 1Tac admins will have access to this tool if we come to your community. I would suggest you replace with trusted admins at your own community.
 
