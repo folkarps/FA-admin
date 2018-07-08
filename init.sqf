@@ -23,16 +23,10 @@ if(isServer) then {
     if (isFilePatchingEnabled) then {
             diag_log format [ "FA ADMIN: file patching is on, trying to add extra hosts, started with: %1", count tac1_adminIDs];
             hostInit = compile preprocessFileLineNumbers "\userconfig\FA_admin\hostList.sqf";
-            lastSleep = 1;
             reloadHosts = {
                 [] call hostInit; 
                 diag_log format [ "FA ADMIN: file patching is on, trying to add extra hosts, ran with: %1", count tac1_adminIDs];
-                if(lastSleep > 300) then {
-                    lastSleep = 300;
-                }else {
-                    lastSleep = lastSleep * 2;
-                };
-                sleep lastSleep;
+                sleep 30;
                 [] spawn reloadHosts;
             };
             [] spawn reloadHosts;
