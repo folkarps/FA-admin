@@ -100,7 +100,6 @@
 
 class adminMenu_RscText
 {
-    access = 0;
     idc = -1;
     type = 0; //%CT_STATIC
     style = 0;//ST_MULTI;
@@ -121,7 +120,6 @@ class adminMenu_RscText
 
 class RscPicture
 {
-    access = 0;
     idc = -1;
     type = CT_STATIC;
     style = ST_PICTURE;
@@ -141,8 +139,7 @@ class RscPicture
 
 class adminMenu_RscButton
 {
-    
-   access = 0;
+
     type = CT_BUTTON;
     text = "";
     colorText[] = {1,1,1,.9};
@@ -199,7 +196,6 @@ class Box
 };
 
 class adminMenu_RscListBox {
-    access = 0;
     type = 5;
     w = 0.4;
     h = 0.4;
@@ -263,7 +259,6 @@ class adminMenu_RscStructuredText {
 
 class adminMenu_RscMapControl 
 {
-    access = 0;
     alphaFadeEndScale = 2;
     alphaFadeStartScale = 2;
     colorBackground[] = {0.969,0.957,0.949,1};

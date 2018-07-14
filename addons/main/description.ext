@@ -4,6 +4,6 @@ class CfgRemoteExec
         {
                 mode = 1;
 
-                class tac1_admin_fnc_zeusServerMake
+                class tac1_admin_fnc_zeusServerMake;
         };
-}
+};

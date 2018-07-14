@@ -14,8 +14,8 @@ class CfgPatches
 		worlds[] = {};
 		requiredAddons[] = {"a3_data_f","a3data"};
 		requiredVersion = 1.0;
-		author[] = {"Snippers","Wolfenswan"};
-		authorUrl = "www.teamonetactical.com";
+		author[] = {"Pooter","Snippers","Wolfenswan"};
+		authorUrl = "www.folkarps.com";
 	};
 };
 
@@ -133,7 +133,7 @@ class CfgVehicles {
     
     
 	#include "cfgVehiclesModulesFa.hpp"
-}
+};
 
 class CfgDifficulties {
 	default = "Veteran";
