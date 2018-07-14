@@ -74,10 +74,10 @@ prefix = "fa"
 pbo_name_prefix = "fa_"
 signature_blacklist = []
 ignorePbo = "extDB3.pbo"
-importantFiles = ["mod.cpp", "README.md", "LICENSE"]
+importantFiles = ["mod.cpp", "README.md", "LICENSE", "logo_fa_ca.paa"]
 versionFiles = ["README.md", "mod.cpp"]
 
-#, "logo_fa_ca.paa"
+
 ciBuild = False # Used for CI builds
 
 ###############################################################################
@@ -1221,7 +1221,7 @@ See the make.cfg file for additional build options.
 
                     if os.path.isfile(nobinFilePath):
                         print_green("$NOBIN$ Found. Proceeding with non-binarizing!")
-                        cmd = [makepboTool, "-P","-A","-L","-G","-X=*.backup", os.path.join(work_drive, prefix, module),os.path.join(module_root, release_dir, project,"addons")]
+                        cmd = [makepboTool, "-P","-A","-N","-X=*.backup", os.path.join(work_drive, prefix, module),os.path.join(module_root, release_dir, project,"addons")]
 
                     else:
                         if check_external:

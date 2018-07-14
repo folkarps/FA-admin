@@ -257,7 +257,7 @@ class adminMenu_RscStructuredText {
   };
 };
 
-class adminMenu_RscMapControl 
+class adminMenu_RscMapControl
 {
     alphaFadeEndScale = 2;
     alphaFadeStartScale = 2;
