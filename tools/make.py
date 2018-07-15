@@ -781,7 +781,7 @@ def main(argv):
     arg_modules = False # Only build modules on command line?
     use_pboproject = True # Default to pboProject build tool
     make_target = "DEFAULT" # Which section in make.cfg to use for the build
-    new_key = True # Make a new key and use it to sign?
+    new_key = False # Make a new key and use it to sign?
     quiet = False # Suppress output from build tool?
 
     # Parse arguments

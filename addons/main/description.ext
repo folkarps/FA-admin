@@ -7,3 +7,24 @@ class CfgRemoteExec
                 class tac1_admin_fnc_zeusServerMake;
         };
 };
+delete enableDebugConsole;
+enableDebugConsole[] = {
+                        		"76561197978479707", // Pickers
+                        		"76561198028156171", // Aquarius
+                        		"76561197967080299", // Ferrard
+                        		"76561197967886612", // Netkev
+                        		"76561197970308881", // Bodge
+                        		"76561197991685206", // blip2
+                        		"76561198038419783", // eagle_eye
+                        		"76561197998285916", // darkChozo
+                        		"76561197989940416", // Pooter
+                        		"76561198024309753", // Madrak_the_red
+                                "76561198057520464", //Mabbott
+                                "76561198085572549", //AJAX
+                                "76561198188644530",
+                                "76561198070138516",
+                        	"76561197970354151",//Teifiterror
+                        	"76561198011517761",//SuicideKing
+                                 "76561198011821851",//Lexer
+                        	     "76561198041834344"//nikkoJT
+};

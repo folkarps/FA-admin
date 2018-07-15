@@ -37,12 +37,27 @@ if(isServer) then {
 if (hasInterface) then {
     [] spawn {
         waitUntil {sleep 0.5; !isNull (findDisplay 46)};
+        registeredDisplays pushBack((findDisplay 46));
         (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call tac1_admin_fnc_keyPressed"];
     };
     [] spawn {
         waitUntil {sleep 0.5; !isNull (findDisplay 60492)};
+        registeredDisplays pushBack((findDisplay 60492));
         (findDisplay 60492) displayAddEventHandler ["KeyDown", "_this call tac1_admin_fnc_keyPressed"];
     };
+    registeredDisplays = [];
+    addDisplays = {
+       _displays = allDisplays;
+       {
+        if(!(_x in registeredDisplays)) then {
+            registeredDisplays pushBack(_x);
+            _x displayAddEventHandler ["KeyDown", "_this call tac1_admin_fnc_keyPressed"];
+        }
+       } forEach _displays;
+       sleep 30;
+       [] spawn addDisplays;
+    };
+    [] spawn addDisplays;
     
 };
 [] spawn {
