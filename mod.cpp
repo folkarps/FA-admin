@@ -1,11 +1,11 @@
 name = "FAdmin";
-picture = "logo_fa_ca.paa";
+picture = "logo_fa.paa";
 actionName = "GitHub";
 action = "https://github.com/Raptoer/FA-admin";
 description = "FA Admin";
-logo = "logo_fa_ca.paa";
-logoOver = "logo_fa_ca.paa";
+logo = "logo_fa.paa";
+logoOver = "logo_fa.paa";
 tooltip = "Folk Arps Admin";
 overview = "Addon for Folk Arps admins";
 author = "Pooter";
-overviewPicture = "logo_fa_ca.paa";
+overviewPicture = "logo_fa.paa";

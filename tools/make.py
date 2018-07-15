@@ -74,7 +74,7 @@ prefix = "fa"
 pbo_name_prefix = "fa_"
 signature_blacklist = []
 ignorePbo = "extDB3.pbo"
-importantFiles = ["mod.cpp", "README.md", "LICENSE", "logo_fa_ca.paa"]
+importantFiles = ["mod.cpp", "README.md", "LICENSE", "logo_fa.paa"]
 versionFiles = ["README.md", "mod.cpp"]
 
 
