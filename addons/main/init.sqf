@@ -63,7 +63,6 @@ if (hasInterface) then {
     [] spawn {
         waitUntil {sleep 0.5;  (getPlayerUID player) != ""};
         FA_ADMIN_PLAYER_UID = (getPlayerUID player);
-        player globalChat "ran";
     };
 };
 [] spawn {
