@@ -1,6 +1,8 @@
 if (isNull (getAssignedCuratorLogic player)) then {
     [] spawn {
+        diag_log "give zeus self 1";
         if (!isNull findDisplay 60492 && isNil "zeusEnteredOnce") then {
+            diag_log "give zeus self 2";
             ["Terminate"] call BIS_fnc_EGSpectator;
             waitUntil {isNull findDisplay 60492};
             createCenter sideLogic;

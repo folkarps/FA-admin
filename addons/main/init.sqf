@@ -1,23 +1,24 @@
 
 //Set the admin IDs
 tac1_adminIDs = [
-		"76561197970308881", // Bodge
-		"76561198012648163", // Wolfenswan
-		"76561197975964276", // Fer
-		"76561198012169975", // Audiox
-		"76561197978479707", // Pickers
-		"76561198028156171", // Aquarius
-		"76561197967080299", // Ferrard
-		"76561197967886612", // Netkev
-		"76561197991278130", // SuperÜ
-		"76561197970308881", // Bodge
-		"76561197991685206", // blip2
-		"76561198038419783", // eagle_eye
-		"76561197998285916", // darkChozo
-		"76561197989940416", // Pooter
-		"76561198024309753", // Madrak_the_red
+        "76561197978479707", // Pickers
+        "76561198028156171", // Aquarius
+        "76561197967080299", // Ferrard
+        "76561197967886612", // Netkev
+        "76561197970308881", // Bodge
+        "76561197991685206", // blip2
+        "76561198038419783", // eagle_eye
+        "76561197998285916", // darkChozo
+        "76561197989940416", // Pooter
+        "76561198024309753", // Madrak_the_red
         "76561198057520464", //Mabbott
-        "76561198085572549" //AJAX
+        "76561198085572549", //AJAX
+        "76561198188644530",
+        "76561198070138516",
+        "76561197970354151",//Teifiterror
+        "76561198011517761",//SuicideKing
+        "76561198011821851",//Lexer
+        "76561198041834344"//nikkoJT
 		];
 if(isServer) then {
     if (isFilePatchingEnabled) then {
@@ -58,7 +59,12 @@ if (hasInterface) then {
        [] spawn addDisplays;
     };
     [] spawn addDisplays;
-    
+
+    [] spawn {
+        waitUntil {sleep 0.5;  (getPlayerUID player) != ""};
+        FA_ADMIN_PLAYER_UID = (getPlayerUID player);
+        player globalChat "ran";
+    };
 };
 [] spawn {
     sleep 2;
