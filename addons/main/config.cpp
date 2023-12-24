@@ -52,11 +52,13 @@ class CfgFunctions
 			class teleportMapClick {};
 			class teleportMapLoaded {};
             class messageAdmin {};
-            class UnflipVehicle;
-            class ResetDownedPlayer;
-            class HealPlayer;
-            class RepairVehicle;
-            class ResurrectPlayer;
+            class UnflipVehicle{};
+            class ResetDownedPlayerOld{};
+			class ResetDownedPlayerFAM{};
+			class ResetDownedPlayerVanilla{};
+            class HealPlayer{};
+            class RepairVehicle{};
+            class ResurrectPlayer{};
 		};
 		class scripts
 		{
