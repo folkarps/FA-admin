@@ -1,16 +1,10 @@
 #include "\1tac_admin\module_header.hpp"
 private _downedUnits = (position _logic) nearEntities [["Man"], 1];
 {
-    
-	// if unit is down , revive him.
-	if(_x getVariable ["f_wound_down",false] ) then
+	if(isPlayer _x) then
 	{
-        [_x,false] remoteExec ["f_fnc_SetDowned",  _x] ;
+        [_x] remoteExec ["f_fnc_famReset",  _x] ;
 	};
-    
-	if(_x getVariable ["f_wound_bleeding",false]) then {
-        [_x,false] remoteExec ["f_fnc_SetBleeding",  _x] ;
-    };
 } forEach _downedUnits;
 		
 #include "\1tac_admin\module_footer.hpp"
