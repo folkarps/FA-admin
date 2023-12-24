@@ -1,16 +1,13 @@
 #include "\1tac_admin\module_header.hpp"
-downedUnits = (position _logic) nearEntities [["Man"], 1];
+private _downedUnits = (position _logic) nearEntities [["CAManBase"], 1];
 {
     
 	// if unit is down , revive him.
-	if(_x getVariable ["f_wound_down",false] ) then
+	if(isPlayer _x) then
 	{
-        [_x,false] remoteExec ["f_fnc_SetDowned",  _x, false] ;
+        ["#rev",1,_x] remoteExecCall ["BIS_fnc_reviveOnState",  _x] ;
 	};
-    
-	if(_x getVariable ["f_wound_bleeding",false]) then {
-        [_x,false] remoteExec ["f_fnc_SetBleeding",  _x, false] ;
-    };
-} forEach downedUnits;
+   
+} forEach _downedUnits;
 		
 #include "\1tac_admin\module_footer.hpp"
