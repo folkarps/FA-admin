@@ -34,6 +34,13 @@ class Fa_Module_Repair_Vehicle : Fa_Fa_Module_Base
 	function = "tac1_admin_fnc_RepairVehicle";
 };
 
+class Fa_Module_AddVehicleFA3FCS : Fa_Fa_Module_Base
+{
+	scopeCurator = 2;
+	displayName = "Add FA3 FCS to vehicle";
+	function = "tac1_admin_fnc_AddVehicleFA3FCS";
+};
+
 class Fa_Module_Heal_Player : Fa_Fa_Module_Base
 {
 	scopeCurator = 2;
