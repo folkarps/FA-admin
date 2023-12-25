@@ -59,6 +59,7 @@ class CfgFunctions
             class HealPlayer{};
             class RepairVehicle{};
             class ResurrectPlayer{};
+			class SlapPlayer{};
 		};
 		class scripts
 		{

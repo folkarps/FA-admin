@@ -54,3 +54,10 @@ class Fa_Module_Resurrect_Player : Fa_Fa_Module_Base
 	displayName = "Resurrect player";
 	function = "tac1_admin_fnc_ResurrectPlayer";
 };
+
+class Fa_Module_SlapPlayer : Fa_Fa_Module_Base
+{
+	scopeCurator = 2;
+	displayName = "Slap player";
+	function = "tac1_admin_fnc_slapPlayer";
+};
