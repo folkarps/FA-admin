@@ -38,6 +38,7 @@ class CfgFunctions
 			class actionGroupTeleport {};
 			class actionPlayerTeleport {};
 			class actionZeusAddAllObjects {};
+			class addVehicleFA3FCS{};
 			class endMissionInstant {};
 			class endMissionSmooth {};
 			class fillMissionEndingBox {};
