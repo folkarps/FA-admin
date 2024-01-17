@@ -3,6 +3,7 @@
 if (isNil "fa_admin_fnc_slapPlayerLocal") then {
 	fa_admin_fnc_slapPlayer = {
 		params ["_unit"];
+		private _oldDamageState = isDamageAllowed _unit;
 		_unit allowDamage false;
 		private _randomStage1 = [
 			random [-1, selectRandom [0.5,-0.5], 1],
@@ -12,7 +13,7 @@ if (isNil "fa_admin_fnc_slapPlayerLocal") then {
 		_unit addForce [_randomStage2 vectorMultiply 4000, [0,0,1]];
 		sleep 10;
 		_unit setUnconscious false;
-		_unit allowDamage true;
+		_unit allowDamage _oldDamageState;
 		_unit playMoveNow "amovppnemstpsraswrfldnon";
 	};
 	publicVariable "fa_admin_fnc_slapPlayerLocal";
