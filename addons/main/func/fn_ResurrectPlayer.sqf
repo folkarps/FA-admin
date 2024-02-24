@@ -31,7 +31,7 @@ if (isNil "fa_admin_fnc_serverRunner") then {
 				_unit setName format ["Resurrection%1",  round(random 20000)];
 				waitUntil{!isNil "_unit"};
 				(group _unit) setGroupOwner (owner _x);
-				[_x, _unit] remoteExec ["fa_admin_fnc_initRunner", (owner _x), false];
+				[_x, _unit] remoteExec ["fa_admin_fnc_initRunner", (owner _x)];
 			};
 		}forEach allDead;
 	};
@@ -42,7 +42,7 @@ publicVariable "loadoutCopy";
 
 _logicPos = (position _logic);
 
-[_logicPos] remoteExec ["fa_admin_fnc_serverRunner", 2, false];
+[_logicPos] remoteExec ["fa_admin_fnc_serverRunner", 2];
 		
 #include "\1tac_admin\module_footer.hpp"
 

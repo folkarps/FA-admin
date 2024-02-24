@@ -13,7 +13,7 @@ private _EH = (findDisplay 46) displayAddEventHandler ["KeyDown",{
 	if (_key in [156,28]) then {
 		private _vehicle = uiNamespace getVariable ["fa_admin_vehicleToFCS",objNull];
 		if (alive _vehicle) then {
-			[_vehicle] remoteExec ["f_fnc_fcsInit",0,_vehicle];
+			[_vehicle] remoteExec ["f_fnc_fcsInit",0];
 		};
 		(findDisplay 46) displayRemoveEventHandler _thisEventHandler;
 		uiNamespace setVariable ["fa_admin_vehicleToFCS",objNull];
