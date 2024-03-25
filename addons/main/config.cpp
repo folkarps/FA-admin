@@ -38,6 +38,7 @@ class CfgFunctions
 			class actionGroupTeleport {};
 			class actionPlayerTeleport {};
 			class actionZeusAddAllObjects {};
+			class addVehicleFA3FCS{};
 			class endMissionInstant {};
 			class endMissionSmooth {};
 			class fillMissionEndingBox {};
@@ -52,11 +53,14 @@ class CfgFunctions
 			class teleportMapClick {};
 			class teleportMapLoaded {};
             class messageAdmin {};
-            class UnflipVehicle;
-            class ResetDownedPlayer;
-            class HealPlayer;
-            class RepairVehicle;
-            class ResurrectPlayer;
+            class UnflipVehicle{};
+            class ResetDownedPlayerOld{};
+			class ResetDownedPlayerFAM{};
+			class ResetDownedPlayerVanilla{};
+            class HealPlayer{};
+            class RepairVehicle{};
+            class ResurrectPlayer{};
+			class SlapPlayer{};
 		};
 		class scripts
 		{

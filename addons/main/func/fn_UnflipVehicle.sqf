@@ -12,9 +12,9 @@ if (isNil "fa_UnflipVehicleFunction") then {
     publicVariable "fa_UnflipVehicleFunction";
 };
 
-vehicleFlipped = (position _logic) nearEntities [["Car"], 10];
+private _vehicleFlipped = (position _logic) nearEntities [["LandVehicle"], 10];
 {
-    [_x, "fa_UnflipVehicleFunction", true] spawn BIS_fnc_MP;
-} forEach vehicleFlipped;
+    [_x] remoteExec ["fa_UnflipVehicleFunction",_x];
+} forEach _vehicleFlipped;
 		
 #include "\1tac_admin\module_footer.hpp"
